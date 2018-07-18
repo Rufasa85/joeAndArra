@@ -12,6 +12,35 @@ body {
 	width:30%;
 }
 
+.weddingPartyCard {
+	width: 30%;
+	margin:5px;
+	display: inline-block;;
+	border-radius: 5px;
+	box-shadow: 2px 2px;
+	background: yellow;
+
+}
+
+#countdown {
+	position:fixed;
+	display:flex;
+	justify-content: flex-end;
+	width:99%;
+	font-size:24pt;
+	padding:none;
+}
+
+#toHighlight {
+	background: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-top:0;
+	box-sizing: border-box;
+	border:1px solid black;
+	border-top:none;
+}
+
 #splashImg {
 	display: flex;
 	width:100%;
@@ -40,4 +69,13 @@ body {
 #directionsContainer {
 	display: flex;
 	justify-content: space-between;
+}
+
+#weddingParty {
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#registryBar {
+	background-color: darkgreen;
 }
