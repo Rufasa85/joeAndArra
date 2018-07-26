@@ -8,8 +8,33 @@ body {
 	margin:0 auto;
 }
 
+.hideDown {
+	opacity:0;
+}
+
 .directionCard {
-	width:30%;
+	color:white;
+	flex:1;
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s; 
+}
+
+.directionCard > * {
+	transition:opacity 0.5s;
+}
+
+.directionCard.open-active > *:last-child {
+	opacity:1;
+}
+
+.directionCard.open {
+	flex: 5;
+	font-size:40px;
 }
 
 .weddingPartyCard {
@@ -67,8 +92,22 @@ body {
 }
 
 #directionsContainer {
+	width: 80%;
+	margin:0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+
+#carDirections {
+	background-image: url('https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=40085e3ea5d8524b7518df890e4aa72d&auto=format&fit=crop&w=1950&q=80');
+}
+
+#planeDirections{
+	background-image: url('https://images.unsplash.com/photo-1505015154194-2378bc9ac925?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b83afb9f76cef594f021d17356b99525&auto=format&fit=crop&w=1866&q=80');
+}
+
+#transitDirections {
+	background-image: url('https://images.unsplash.com/photo-1509329502519-c7bec26f5808?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9082cc7fe29f9b490b543654a0c7be09&auto=format&fit=crop&w=1952&q=80');
 }
 
 #weddingParty {
