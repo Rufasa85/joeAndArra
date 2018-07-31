@@ -1,5 +1,9 @@
 body {
-	background: pink;
+	font-family: 'Josefin Slab', cursive;
+}
+
+h3 {
+	font-family: 'Arizonia', cursive;
 }
 
 .infoDump {
