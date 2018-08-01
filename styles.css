@@ -12,6 +12,33 @@ h3 {
 	margin:0 auto;
 }
 
+.slide-in {
+	opacity:0;
+	transition:all 1s;
+}
+
+.slide-right {
+	transform:translateX(-30%) scale(0.95);
+}
+
+.slide-left {
+	transform:translateX(30%) scale(0.95);
+}
+
+.slide-up {
+	transform:translateY(-30%) scale(0.95);
+}
+
+.slide-down {
+	transform:translateY(30%) scale(0.95);
+}
+
+.slide-in.active {
+	opacity:1;
+	transform:translateX(0%) scale(1);
+	transform: translateY(0%) scale(1);
+}
+
 .hideDown {
 	opacity:0;
 }
