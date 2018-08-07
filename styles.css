@@ -6,6 +6,12 @@ h3 {
 	font-family: 'Arizonia', cursive;
 }
 
+h1 {
+	font-size: 6em;
+	color: #dadfe1;
+	text-shadow: 2px 2px black;
+}
+
 .infoDump {
 	text-align: justify;
 	width: 50%;
@@ -14,7 +20,7 @@ h3 {
 
 .slide-in {
 	opacity:0;
-	transition:all 1s;
+	transition:all 1.4s;
 }
 
 .slide-right {
@@ -31,6 +37,18 @@ h3 {
 
 .slide-down {
 	transform:translateY(30%) scale(0.95);
+}
+
+p.slide-in {
+	font-size: 2em;
+}
+
+h3.slide-in {
+	font-size:3em;
+}
+
+h4.slide-in {
+	font-size:2.5em;
 }
 
 .slide-in.active {
@@ -74,7 +92,7 @@ h3 {
 	display: inline-block;;
 	border-radius: 5px;
 	box-shadow: 2px 2px;
-	background: yellow;
+	background: #dadfe1;
 
 }
 
@@ -103,7 +121,7 @@ h3 {
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
-	background-image: url(https://images.unsplash.com/photo-1507504031003-b417219a0fde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b7907ec7903c7ebb0cdad5c89500f88&auto=format&fit=crop&w=2850&q=80);
+	background-image: url(https://images.unsplash.com/photo-1425421598808-4a22ce59cc97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22178d39f5b21fd60654f6ec7a4c96f2&auto=format&fit=crop&w=1950&q=80);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -148,4 +166,8 @@ h3 {
 }
 #registryBar {
 	background-color: darkgreen;
+}
+
+#bottomSpacer {
+	height: 100px;
 }

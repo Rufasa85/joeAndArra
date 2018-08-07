@@ -18,7 +18,7 @@ $(document).ready(function() {
   directionCards.forEach(card=>card.addEventListener('click', toggleOpen));
   directionCards.forEach(card=>card.addEventListener('transitionend', toggleActive));
   //sliding in different segements on scroll reveal
-  function debounce(func, wait = 20, immediate = true) {
+  function debounce(func, wait = 5, immediate = true) {
       var timeout;
       return function() {
         var context = this, args = arguments;
@@ -36,7 +36,7 @@ $(document).ready(function() {
     function checkSlide(e) {
       // console.log(window.scrollY)
       slideStuff.forEach(image=> {
-        const slideInAt = window.scrollY + window.innerHeight - image.clientHeight;
+        const slideInAt = window.scrollY + window.innerHeight - image.clientHeight  - 100;
         console.log(image.clientHeight)
         const imageBottom = image.offsetTop + image.clientHeight;
         const isHalfShown = slideInAt>image.offsetTop;
