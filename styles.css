@@ -103,6 +103,7 @@ h4.slide-in {
 	width:99%;
 	font-size:2vw;
 	padding:none;
+	z-index: 2;
 }
 
 #toHighlight {
