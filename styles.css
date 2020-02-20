@@ -85,6 +85,9 @@ h4.slide-in {
 .directionCard.open-active > *:last-child {
 	opacity:1;
 }
+.directionCard > p {
+	background-color: rgba(0, 0, 0, 0.5)
+}
 
 .directionCard.open {
 	flex: 5;
